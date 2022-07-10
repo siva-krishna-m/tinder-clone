@@ -12,6 +12,7 @@ const TinderCards = () => {
         async function fetchData() {
             const request = await axios.get('/tinder/cards');
             setPeople(request.data);
+            console.log(people);
         }
 
         fetchData();
